@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Registration</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                background-color: rgb(78, 70, 60);
+            }
+            form {
+                background-color: #ffffff;
+                border-radius: 10px;
+                margin: 10px 20px;
+                padding: 10px 20px;
+                border: #000000;
+                width: 300px;
+                
+            }
+            label, input, select {
+                border-radius: 10px;
+                margin: 10px 20px;
+                padding: 10px 20px;
+                
+            }
+            button {
+                background-color: #00ff00;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100%;
+            }
+            h2 {
+                text-align: center;
+            }
+            button:hover {
+                background-color: #30fe30;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2>Event Registration</h2>
+            <label for="name">Name</label><br>
+            <input type="text">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+            <label for="class">Class</label>
+            <input type="text" name="class" required>
+            <label for="interest">Interest</label><br>
+            <select name="interest">
+                <option value="coding">Coding</option>
+                <option value="dance">Dance</option>
+                <option value="sing">sing</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
